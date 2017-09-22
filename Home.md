@@ -1,4 +1,3 @@
-Welcome to the istio wiki!
+Welcome to the [Istio](https://istio.io/) wiki!
 
-
-We use this mostly for raw release notes tracking
+We use this so far for detailed release notes tracking.

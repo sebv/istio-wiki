@@ -21,17 +21,29 @@ to your PR - such as inability to start the minikube cluster. If you
 suspect that the failure was a flake, you can rebuild the failing test
 using the CircleCI user interface using the steps below:
 
-1. Click on the failing test
+1. Click on the failing test in the PR
+
+[[images/circleci-failing-pr.png]]
 
 2. Navigate one level up to the suite of tests associated with the PR
 
+[[images/circleci-navigate-to-pr.png]]
+
 3. Click rebuild for the failing tests.
+
+[[images/circleci-rebuild-test.png]]
+
+## Re-run entire workflow
 
 If you wish to re-run the entire CircleCI workflow (all tests)
 
 1. click on the workflow called "all"
 
+[[images/circleci-locate-workflow.png]]
+
 2. Click "rerun" to restart all tests.
+
+[[images/circleci-rerun-entire-workflow.png]]
 
 ### SSH into container to debug
 
@@ -45,10 +57,18 @@ the steps below:
 
 1. Click on the failing test in the PR
 
+[[images/circleci-failing-pr.png]]
+
 2. Click on "Rerun job with SSH"
+
+[[images/circleci-rerun-job-with-ssh.png]]
 
 3. CircleCI will restart the job with SSH enabled. The SSH details will be
    visible as the first step in the job.
+
+[[images/circleci-ssh-details.png]]
    
 4. SSH to the host denoted by CircleCI using your public key.
+
+[[images/circleci-ssh-into-container.png]]
 

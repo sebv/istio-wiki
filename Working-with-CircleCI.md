@@ -33,17 +33,25 @@ using the CircleCI user interface using the steps below:
 
 [[images/circleci-rebuild-test.png]]
 
-## Re-run entire workflow
+*NOTE*: To rerun `e2e-pilot`, you have to follow the procedure outlined
+below.
 
-If you wish to re-run the entire CircleCI workflow (all tests)
+## Re-run multiple failing tests in the workflow
 
-1. click on the workflow called "all"
+CircleCI test suite is organized as a workflow. The tests use the code
+built by the `build` job. So, attempting to rerun `e2e-pilot` task will
+fail. In this scenario, you have to use the workflow UI to rerun the
+failing tasks while utilizing the pre-built cache:
+
+1. Click on the workflow called "all".
 
 [[images/circleci-locate-workflow.png]]
 
-2. Click "rerun" to restart all tests.
+2. Click "Rerun failed jobs" to rerun only the failed tasks in the workflow.
 
-[[images/circleci-rerun-entire-workflow.png]]
+[[images/circleci-rerun-failing-jobs-workflow.png]]
+
+Or if you wish to rerun the entire workflow, click "Rerun from beginning".
 
 ### SSH into container to debug
 

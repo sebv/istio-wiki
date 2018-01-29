@@ -8,3 +8,6 @@ Detailed meeting notes: https://goo.gl/ENFQWb
 
 And
 - Integration in the build and release process
+
+
+See also https://github.com/istio/istio/wiki/Istio-Performance-oriented-setup-FAQ

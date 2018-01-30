@@ -2,7 +2,7 @@
 
 - Make sure the images used are not the `_debug` images (use `istioctl kube-inject --debug=false`)
 
-- Check the ingress images
+- Check the ingress image
 
 - Remove `-v 2`
 
@@ -10,7 +10,7 @@ You can do both of those steps like [this script](https://github.com/istio/istio
 
 ## Starting in 0.5:
 
-The default are non debug. :tada:
+The default images and config are now the non debug ones. :tada:
 
 ## General:
 

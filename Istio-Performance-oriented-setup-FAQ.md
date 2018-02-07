@@ -23,4 +23,12 @@ Automatic proxy injection is implemented as a webhook using Kubernetes MutatingW
 
 It takes on average 1.5us for the webhook to inject the sidecar proxy into a newly created pod per [TBD](https://github.com/istio/istio/pull/3189/files#diff-3fb712a20331a79c4b1c1eda38704a76R515) micro benchmark. Actually injection time will be slightly longer when network latency and api-server processing time is included.
 
+## Perf analysis tools
+
+To debug/install [perf(1)](http://www.brendangregg.com/perf.html) on GKE nodes for instance:
+
+https://cloud.google.com/container-optimized-os/docs/how-to/toolbox#installing_and_running_tools_from_toolbox
+
+## See also
+
 See also the [Performance Testing guide](https://github.com/istio/istio/tree/master/tools#istio-load-testing-user-guide) and the scripts in https://github.com/istio/istio/tree/master/tools

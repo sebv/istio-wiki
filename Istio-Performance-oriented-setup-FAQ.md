@@ -12,6 +12,13 @@ You can do both of those steps like [this script](https://github.com/istio/istio
 
 The default images and config are now the non debug ones. :tada:
 
+To switch back debug logging for mixer:
+```
+$ kubectl edit deployment -n istio-system istio-mixer
+# Add to args list:
+        - --log_output_level=debug
+```
+
 ## General:
 
 - Setup multiple pilot, mixers

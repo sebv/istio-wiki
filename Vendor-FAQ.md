@@ -27,7 +27,8 @@ go get istio.io/istio
 make pull
 ```
 
-or manually
+or manually, when you notice that [Gopkg.lock](https://github.com/istio/istio/blob/master/Gopkg.lock) changed:
+
 ```
 git submodule sync && git submodule update
 ```

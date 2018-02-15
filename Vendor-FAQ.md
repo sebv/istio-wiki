@@ -17,6 +17,11 @@ make init
 git clone --recurse-submodules https://github.com/istio/istio.git
 ```
 
+or even better (as it will place the source tree in the right location for go):
+```
+go get istio.io/istio
+```
+
 ## How do I stay in sync
 ```
 make pull

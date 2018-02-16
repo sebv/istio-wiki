@@ -33,6 +33,23 @@ or manually, when you notice that [Gopkg.lock](https://github.com/istio/istio/bl
 git submodule sync && git submodule update
 ```
 
+## How do I check my setup is ok vendor wise
+
+```
+# in ~/go/src/istio.io/istio
+cd vendor; git status; git remote -v
+```
+should output
+```
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+origin	https://github.com/istio/vendor-istio.git (fetch)
+origin	https://github.com/istio/vendor-istio.git (push)
+```
+
+
 ## How do I add / change a dependency
 
 Edit the [Gopkg.toml](https://github.com/istio/istio/blob/master/Gopkg.toml).

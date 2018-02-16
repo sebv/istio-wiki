@@ -1,6 +1,6 @@
 Istio uses vendored dependencies through a submodule. This avoids having large unrelated commits mixed with our actual work while having the benefits of hermetic reproducible builds, tracked changes and fast dependencies download.
 
-## How do I get setup
+## How do I get setup?
 One time / first time setup
 
 ### Existing clone/fork:
@@ -22,7 +22,7 @@ or even better (as it will place the source tree in the right location for go):
 go get istio.io/istio
 ```
 
-## How do I stay in sync
+## How do I stay in sync?
 ```
 make pull
 ```
@@ -33,7 +33,7 @@ or manually, when you notice that [Gopkg.lock](https://github.com/istio/istio/bl
 git submodule sync && git submodule update
 ```
 
-## How do I check my setup is ok vendor wise
+## How do I check my setup is ok vendor wise?
 
 ```
 # in ~/go/src/istio.io/istio
@@ -62,7 +62,7 @@ $ du -hs vendor/
 ```
 This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#diff-836546cc53507f6b2d581088903b1785R39) setup in go dep.
 
-## How do I add / change a dependency
+## How do I add / change a dependency?
 
 Edit the [Gopkg.toml](https://github.com/istio/istio/blob/master/Gopkg.toml).
 
@@ -73,6 +73,6 @@ Run `dep ensure`
 Once approved/merged (or on a branch of the vendor repo): submit your PR once the submodule change doesn't show `-dirty`
 
 
-## How do we auto update dependencies
+## How do we auto update dependencies?
 
 A periodic job can run `dep ensure` and commit a vendor submodule PR first and if approved and passing the test move the `vendor/` in istio/istio

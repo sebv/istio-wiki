@@ -51,6 +51,17 @@ origin	https://github.com/istio/vendor-istio.git (push)
 
 If you get something else, see setup above
 
+## How big is vendor, how much of a download?
+```
+# during clone, submodule download is ~8Mb
+Receiving objects: 100% (4280/4280), 7.96 MiB | 6.93 MiB/s, done.
+# size once expanded
+$ du -hs vendor/
+ 54M	vendor/
+# it used to be 407Mb before
+```
+This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#diff-836546cc53507f6b2d581088903b1785R39) setup in go dep.
+
 ## How do I add / change a dependency
 
 Edit the [Gopkg.toml](https://github.com/istio/istio/blob/master/Gopkg.toml).

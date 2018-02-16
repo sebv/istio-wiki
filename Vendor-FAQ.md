@@ -8,7 +8,7 @@ One time / first time setup
 If you have a pre Feb 15 2018 fork or clone:
 
 ```
-rm -rf ./vendor/
+rm -rf ./vendor/ # only do that if vendor/ is a plain directory without a .git
 make init
 ```
 
@@ -49,6 +49,7 @@ origin	https://github.com/istio/vendor-istio.git (fetch)
 origin	https://github.com/istio/vendor-istio.git (push)
 ```
 
+If you get something else, see setup above
 
 ## How do I add / change a dependency
 

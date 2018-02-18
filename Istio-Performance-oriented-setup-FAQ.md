@@ -28,7 +28,7 @@ $ kubectl edit deployment -n istio-system istio-mixer
 
 Automatic proxy injection is implemented as a webhook using Kubernetes MutatingWebhook. Its stateless, depending only on the injection template and mesh configuration configmaps as well as the to-be-injected pod object. As such, it can be easily horizontally scaled, either manually via the [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#scaling-a-deployment) object, or automatically via a [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
 
-It takes on average 1.5us for the webhook to inject the sidecar proxy into a newly created pod per [TBD](https://github.com/istio/istio/pull/3189/files#diff-3fb712a20331a79c4b1c1eda38704a76R515) micro benchmark. Total injection time will be slightly higher when accounting for network latency and api-server processing time.
+It only takes an average 1.5us for the webhook itself to inject the sidecar proxy into a newly created pod per [micro benchmark](https://github.com/istio/istio/pull/3189/files#diff-3fb712a20331a79c4b1c1eda38704a76R515). Total injection time will be obviously much higher when accounting for network latency and api-server processing time (TBD/measure).
 
 ## Perf analysis tools
 

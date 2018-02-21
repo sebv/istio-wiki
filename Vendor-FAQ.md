@@ -84,3 +84,7 @@ Once approved/merged (or on a branch of the vendor repo): submit your PR once th
 ## How do we auto update dependencies?
 
 A periodic job can run `dep ensure` and commit a vendor submodule PR first and if approved and passing the test move the `vendor/` in istio/istio
+
+## Should I merge changes in `vendor/`?
+
+No.

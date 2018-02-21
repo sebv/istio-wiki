@@ -87,7 +87,7 @@ No, If you see in your `git status`
 ```
 	modified:   vendor (untracked content)
 ```
-Do not add this to your PR. Unlike you explicitly wanted to make dependency changes, see next question:
+Do not add this to your PR. Unlike you explicitly wanted to make dependency changes, like in the previous question.
 
 ## How do we auto update dependencies?
 

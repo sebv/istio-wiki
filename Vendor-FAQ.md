@@ -10,11 +10,13 @@ If you have a pre Feb 15 2018 fork or clone:
 ```
 rm -rf ./vendor/ # only do that if vendor/ is a plain directory without a .git
 make init
+( cd vendor && git checkout master && git pull )
 ```
 
 ### New repo
 ```
 git clone --recurse-submodules https://github.com/istio/istio.git
+cd istio/vendor && git checkout master && git pull
 ```
 
 or even better (as it will place the source tree in the right location for go):
@@ -23,6 +25,12 @@ go get istio.io/istio
 ```
 
 ## How do I stay in sync?
+
+1 time setup that helps if you will be changing the dependencies:
+```
+cd vendor && git checkout master && git pull
+```
+then regularly
 ```
 make pull
 ```

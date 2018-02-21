@@ -81,10 +81,14 @@ Run `dep ensure`
 Once approved/merged (or on a branch of the vendor repo): submit your PR once the submodule change doesn't show `-dirty`
 
 
+## Should I merge changes in `vendor/`?
+
+No, If you see in your `git status`
+```
+	modified:   vendor (untracked content)
+```
+Do not add this to your PR. Unlike you explicitly wanted to make dependency changes, see next question:
+
 ## How do we auto update dependencies?
 
 A periodic job can run `dep ensure` and commit a vendor submodule PR first and if approved and passing the test move the `vendor/` in istio/istio
-
-## Should I merge changes in `vendor/`?
-
-No.

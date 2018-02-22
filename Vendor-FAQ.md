@@ -76,7 +76,9 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 
 1. Edit the [Gopkg.toml](https://github.com/istio/istio/blob/master/Gopkg.toml).
 
-1. Run `dep ensure --update <name.of.the.package.added.or.updated>`
+1. Run `make depend.update` (or `dep ensure --update <name.of.the.package.added.or.updated>`)
+
+1. If you ran dep by hand, make sure to copy the Gopkg.* to vendor/
 
 1. `cd vendor/` and `git status` / check `git diff`, make a PR for the changes
 

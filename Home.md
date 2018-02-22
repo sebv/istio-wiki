@@ -1,3 +1,7 @@
 Welcome to the [Istio](https://istio.io/) wiki!
 
-We use this so far for detailed release notes tracking, working group decisions recording and misc useful information like [Working with CircleCI](Working-with-CircleCI) and [Vendor FAQ](https://github.com/istio/istio/wiki/Vendor-FAQ)
+We use this so far for detailed release notes tracking, working group decisions recording and misc useful information like
+
+- [Working with CircleCI](Working-with-CircleCI) 
+
+- [Vendor FAQ](https://github.com/istio/istio/wiki/Vendor-FAQ)

@@ -72,11 +72,13 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 
 ## How do I add / change a dependency?
 
-Edit the [Gopkg.toml](https://github.com/istio/istio/blob/master/Gopkg.toml).
+1. Make sure your `dep` is recent enough (understands pruning etc...): `go get -u github.com/golang/dep/cmd/dep`
 
-Run `dep ensure`
+1. Edit the [Gopkg.toml](https://github.com/istio/istio/blob/master/Gopkg.toml).
 
-`cd vendor/` and `git status` / check `git diff`, make a PR for the changes
+1. Run `dep ensure --update the.package.added.or.updated`
+
+1. `cd vendor/` and `git status` / check `git diff`, make a PR for the changes
 
 Once approved/merged (or on a branch of the vendor repo): submit your PR once the submodule change doesn't show `-dirty`
 

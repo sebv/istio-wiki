@@ -72,7 +72,11 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 
 ## How do I add / change a dependency?
 
-1. Make sure your `dep` is recent enough (understands pruning etc...): `go get -u github.com/golang/dep/cmd/dep`
+1. Make sure your `dep` is recent enough (understands pruning etc...): 
+   ```
+   go get -u github.com/golang/dep/cmd/dep
+   ls -l `which dep` # should show now's timestamp
+   ```
 
 1. Edit the [Gopkg.toml](https://github.com/istio/istio/blob/master/Gopkg.toml).
 

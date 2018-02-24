@@ -88,6 +88,8 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 
 1. `cd vendor/` and `git status` / check `git diff`, make a PR for the changes
 
+1. make sure `make vendor.check depend.status` doesn't error out before submitting your PRs
+
 Once approved/merged (or on a branch of the vendor repo): submit your PR once the submodule change doesn't show `-dirty`
 
 

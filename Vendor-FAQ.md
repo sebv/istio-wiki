@@ -58,6 +58,11 @@ origin	https://github.com/istio/vendor-istio.git (push)
 ```
 
 If you get something else, see setup above
+try:
+```
+cd vendor
+git reset --hard origin/master
+```
 
 ## How big is vendor, how much of a download?
 ```

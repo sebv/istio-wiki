@@ -14,6 +14,8 @@ To use CircleCI, you must sign up for the free service and authorize
 CircleCI to access your Github account. Follow the steps outlined here to
 [setup CircleCI](https://circleci.com/docs/2.0/first-steps/).
 
+[[images/circleci-login.png]]
+
 ### Re-run failing tests
 
 Occasionally, a test on CircleCI may fail spuriously for reasons unrelated

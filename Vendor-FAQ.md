@@ -80,7 +80,7 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 
 1. Edit the [Gopkg.toml](https://github.com/istio/istio/blob/master/Gopkg.toml).
 
-1. Run `make depend.update` or `make depend.update DEPARGS="--update some.package/to.be.updated"` for instance to update only 1 package. (or manually `dep ensure --update <name.of.the.package.added.or.updated>`)
+1. Run `make depend.update` (or `make depend.update DEPARGS="--update some.package/to.be.updated"` for instance to update only 1 package - but that doesn't seem to always succeed so the target without DEPARGS is better for now. or manually `dep ensure --update <name.of.the.package.added.or.updated>`)
 
 1. If getting errors you may need to do a `make depend.update.full` and/or delete directories in your ~/go/dep and/or ask for help
 

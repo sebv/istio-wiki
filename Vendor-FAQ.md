@@ -91,7 +91,7 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 
 1. If you ran dep by hand, make sure to copy the Gopkg.* to vendor/
 
-1. `cd vendor/` and `git status` / check `git diff`, make a PR for the changes *DO NOT PUSH YOUR PR IF THE CHANGES ARE UNEXPECTED - For instance if you see 20k files changed, something is wrong...*
+1. `cd vendor/` and `git status` / check `git diff`, make a PR for the changes. **DO NOT PUSH YOUR PR IF THE CHANGES ARE UNEXPECTED - For instance if you see 20k files changed, something is wrong...**
 
 1. make sure `make vendor.check depend.status` doesn't error out before submitting your PRs
 

@@ -100,11 +100,25 @@ Once approved/merged (or on a branch of the vendor repo): submit your PR once th
 
 ## Should I merge changes in `vendor/`?
 
-No, If you see in your `git status`
+**No**, If you see in your `git status`
 ```
 	modified:   vendor (untracked content)
 ```
 Do not add this to your PR. Unlike you explicitly wanted to make dependency changes, like in the previous question.
+
+## I did something and now my PR has a vendor change, how do I fix it ?
+
+```
+# Setup a remote that points for sure to istio's master (you could use upstream if it's setup and fetched)
+git remote remove vendor_fix
+git remote add -t master -m master -f vendor_fix https://github.com/istio/istio.git
+# This gets Gopkg.* and vendor sha from istio's master:
+git checkout vendor_fix -- Gopkg.lock Gopkg.toml vendor
+# This syncs vendor file and vendor directory - if you get error; rm -rf vendor; make submodule-sync
+git submodule update
+```
+
+The add, commit, push to your PR to fix it
 
 ## How do we auto update dependencies?
 

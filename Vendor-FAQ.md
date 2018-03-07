@@ -106,6 +106,12 @@ Once approved/merged (or on a branch of the vendor repo): submit your PR once th
 ```
 Do not add this to your PR. Unlike you explicitly wanted to make dependency changes, like in the previous question.
 
+Try
+```
+make submodule-sync
+```
+to remove that
+
 ## I did something and now my PR has a vendor change, how do I fix it ?
 
 ```

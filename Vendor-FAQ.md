@@ -85,7 +85,7 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
    ls -l `which dep` # should show now's timestamp
    ```
 
-1. Edit the [Gopkg.toml](https://github.com/istio/istio/blob/master/Gopkg.toml).
+1. Use your new dependency in new code (most cases) or edit the [Gopkg.toml](https://github.com/istio/istio/blob/master/Gopkg.toml) (special cases).
 
 1. Run `make depend.update` (or `make depend.update DEPARGS="--update some.package/to.be.updated"` for instance to update only 1 package - but that doesn't seem to always succeed so the target without DEPARGS is better for now. or manually `dep ensure --update <name.of.the.package.added.or.updated>`)
 
@@ -96,6 +96,8 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 1. Note that `Gopkg.*` and `vendor` are in `.gitignore` to avoid accidental changes so you will need to manually add the changes
 
 1. `cd vendor/` and `git status` / check `git diff`, make a PR for the changes. **DO NOT PUSH YOUR PR IF THE CHANGES ARE UNEXPECTED - For instance if you see 20k files changed, something is wrong...**
+
+1. Do not forget to add all "untracked" files/directories to your vendor PR, that's how new files become available.
 
 1. make sure `make vendor.check depend.status` doesn't error out before submitting your PRs
 

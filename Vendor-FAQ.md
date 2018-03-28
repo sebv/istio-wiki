@@ -77,6 +77,8 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 
 ## How do I add / change a dependency?
 
+1. You need to be able to create a branch on https://github.com/istio/vendor-istio (be an org contributor, if you are not, ask someone who is). This is because the PR you make in istio/istio to validate the vendor change will need to pull the vendor SHA by the CI and thus need to be reachable (alternatively could also change the submodule pointer but that's dangerous/not recommended)
+
 1. Make sure your `dep` is recent enough (understands pruning etc...): 
    ```
    go get -u github.com/golang/dep/cmd/dep
@@ -97,8 +99,13 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 
 1. make sure `make vendor.check depend.status` doesn't error out before submitting your PRs
 
+1. put [vendor-change] for clarity in your istio/istio PR title and cross reference the 2 PRs
+
 Once approved/merged (or on a branch of the vendor repo): submit your PR once the submodule change doesn't show `-dirty`
 
+You will need to change the istio/istio PR again after the istio/vendor-istio one is merged (as the SHA changes from a branch SHA to master SHA)
+
+Make sure both PR get merged within 1h or each other so master of the 2 repos don't stay out of sync for long and so other vendor changes can proceed. All vendor changes by nature must be serialized.
 
 ## Should I merge changes in `vendor/`?
 

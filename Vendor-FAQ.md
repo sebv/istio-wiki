@@ -140,3 +140,7 @@ The add, commit, push to your PR to fix it
 ## How do we auto update dependencies?
 
 A periodic job can run `dep ensure` and commit a vendor submodule PR first and if approved and passing the test move the `vendor/` in istio/istio
+
+## Can I just edit the lock file manually or run dep by hand ?
+
+**NO** if you do it'll mess up vendor for the next person and your change will be lost at next update.

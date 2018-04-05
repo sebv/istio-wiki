@@ -39,3 +39,5 @@ https://cloud.google.com/container-optimized-os/docs/how-to/toolbox#installing_a
 ## See also
 
 See also the [Performance Testing guide](https://github.com/istio/istio/tree/master/tools#istio-load-testing-user-guide) and the scripts in https://github.com/istio/istio/tree/master/tools
+
+The [Perf&Scalability WG](https://github.com/istio/community/blob/master/WORKING-GROUPS.md#performance-and-scalability), and the https://ibmcloud-perf.istio.io/regpatrol/ and https://fortio.istio.io/ results it produces.

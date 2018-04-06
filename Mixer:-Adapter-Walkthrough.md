@@ -1,5 +1,3 @@
-# Istio Mixer: Adapter Development Walkthrough
-
 This document walks through step-by-step instructions to implement, test and plug a simple adapter into Mixer. For
 complete details on the adapter life cycle, please refer to the [Adapter Developer's Guide](./adapters.md).
 

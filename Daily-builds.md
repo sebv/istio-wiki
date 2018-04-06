@@ -19,3 +19,9 @@ curl -L https://git.io/getLatestIstio \
    | ISTIO_VERSION=$DAILY sh -
 cd istio-$DAILY
 ```
+
+## Troubleshooting
+
+### Today's build is missing
+
+check https://prow.istio.io/?author=istio-release-robot

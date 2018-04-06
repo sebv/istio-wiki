@@ -23,4 +23,4 @@ cd istio-$DAILY
 ## Troubleshooting
 
 ### No Daily Release Today
-Check https://prow.istio.io/?author=istio-release-robot. Any release qualification test failure can block the daily release. Please file an issue if the issue is new (i.e. not currently tracked by any issue).
+Check https://prow.istio.io/?author=istio-release-robot. Any release qualification test failure can block the daily release. Please file an issue if the error looks new (i.e. not currently tracked by any issue).

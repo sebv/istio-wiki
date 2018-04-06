@@ -1,5 +1,3 @@
-# Istio Mixer: Template Developer’s Guide
-
 Templates are a foundational building block of the Mixer architecture. This document
 describes the template format and how to extend Mixer with custom templates.
 

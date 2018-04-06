@@ -22,6 +22,5 @@ cd istio-$DAILY
 
 ## Troubleshooting
 
-### Today's build is missing
-
-check https://prow.istio.io/?author=istio-release-robot
+### No Daily Release Today
+Check https://prow.istio.io/?author=istio-release-robot. Any release qualification test failure can block the daily release. Please file an issue if the issue is new (i.e. not currently tracked by any issue).

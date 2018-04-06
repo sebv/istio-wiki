@@ -1,5 +1,3 @@
-# Deploying Mixer With Custom Adapters
-
 Congratulations! You've managed to build a complete Mixer adapter and have validated
 that it works via local testing.
 

@@ -1,5 +1,3 @@
-# Running Mixer locally
-
 The following command runs Mixer locally using local configuration.
 The default configuration contain adapters like `stackdriver` that connect to outside systems. If you do not intend to use the  adapter for
 local testing, you should move `mixer/testdata/config/stackdriver.yaml` out of the config directory, otherwise you will see repeated logging of

@@ -1,5 +1,3 @@
-# Troubleshooting
-
 - If you experience the following error during build:
 
 _grouped write of manifest, lock and vendor: error while writing out vendor tree: failed to write dep tree:

@@ -1,5 +1,3 @@
-# Creating Fast and Lean Code
-
 It's imperative to keep latency and memory consumption of Istio components low.
 To that end, we present here a few general guidelines and pointers.
 

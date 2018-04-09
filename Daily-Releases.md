@@ -1,10 +1,11 @@
-# Daily build information
+# Daily Release Information
 
-> Those daily builds aren't meant for general consumption
+> Daily releases aren't meant for general consumption
 
-The dailies are published on
-https://gcsweb.istio.io/gcs/istio-prerelease/daily-build/
+Daily releases are published to https://gcsweb.istio.io/gcs/istio-prerelease/daily-build/. These builds have passed release qualification tests.
 
+All daily builds (including those that did not pass release qualifications tests) can be found at
+https://gcsweb.istio.io/gcs/istio-release-pipeline-data/daily-build/.
 
 Notes:
 - The file name's timestamp is in UTC

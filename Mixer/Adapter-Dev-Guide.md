@@ -25,7 +25,7 @@ Adapters enable Mixer to expose a single consistent API, independent of the infr
 set of adapters used at runtime is determined through operator configuration and can easily be extended to target new
 or custom infrastructure backends.
 
-![mixer architecture](./images/mixer%20architecture.svg)
+![mixer architecture](/images/mixer%20architecture.svg)
 
 Mixer structures its incoming attributes into a more useful form for adapters using
 templates. Templates describe the form of data dispatched to adapters when processing a request and the interface that
@@ -53,7 +53,7 @@ The roles of the template author, adapter author, and the operator can be summar
   ([handlers](https://istio.io/docs/concepts/policy-and-control/mixer-config.html#handlers)), and when to send it
   ([rules](https://istio.io/docs/concepts/policy-and-control/mixer-config.html#rules)).
 
-![operator, adapter and template devs](./images/operator%20template%20adapter%20dev.svg)
+![operator, adapter and template devs](/images/operator%20template%20adapter%20dev.svg)
 
 
 # Template overview
@@ -67,7 +67,7 @@ that data.
 
 The following diagram shows the various components of a template.
 
-![template generated artifacts](./images/template%20generated%20artifacts.svg)
+![template generated artifacts](/images/template%20generated%20artifacts.svg)
 
 We'll look at each of these in more detail below.
 
@@ -546,7 +546,7 @@ Mixer has three states during which it interacts with adapters: initialization-t
 
 High level flow between Mixer and adapters.
 
-![flow: mixer and adapter interaction](./images/mixer%20adapter%20flow.svg)
+![flow: mixer and adapter interaction](/images/mixer%20adapter%20flow.svg)
 
 Let's take a detailed look at them:
 
@@ -570,21 +570,21 @@ type Info struct {
 	// Vendor adapters should use a vendor prefix.
 	// example: mycompany-denier
 	Name string
-	
+
 	// Impl is the package implementing the adapter.
 	// example: "istio.io/istio/mixer/adapter/denier"
 	Impl string
-	
+
 	// Description returns a user-friendly description of the adapter.
 	Description string
-	
+
 	// NewBuilder is a function that creates a Builder which implements Builders
 	// associated with the SupportedTemplates.
 	NewBuilder NewBuilderFn
-	
+
 	// SupportedTemplates expresses all the templates the adapter wants to serve.
 	SupportedTemplates []string
-	
+
 	// DefaultConfig is a default configuration struct for this
 	// adapter. This will be used by the configuration system to establish
 	// the shape of the block of configuration state passed to the HandlerBuilder.Build
@@ -605,7 +605,7 @@ Details about the configuration time Mixer-Adapter interaction:
 
 Every handler config block in the operator's config results in an instance of `builder` type
 
-![handler config](./images/handler%20config.svg)
+![handler config](/images/handler%20config.svg)
 
 **Passing template-specific types and adapter-specific config to `builder`**
 
@@ -617,7 +617,7 @@ configured by the operator and the shape of the `Instance` object the adapter wo
 Given the above sample handler configuration and 'metric' template, the example below shows configuration-time call values.
 
 
-![flow: example attr to types](./images/example%20instance%20to%20type.svg)
+![flow: example attr to types](/images/example%20instance%20to%20type.svg)
 
 At request time, every `Instance` object dispatched to the adapter has a `Name` field. The adapter implementation should
 use the value of the `Name` field to lookup the shape description for the `Instance` object from the map of instance
@@ -654,7 +654,7 @@ Given the above example operator's config (instance, action, handler configurati
 ['metric'](#report-variety-template) template, the following example shows the request-time `Instance` objects created
 for a given input set of attributes:
 
-![example attr to instance mapping](./images/example%20attr%20to%20instance.svg)
+![example attr to instance mapping](/images/example%20attr%20to%20instance.svg)
 
 # Example
 
@@ -887,4 +887,3 @@ examples for reference when implementing new adapters.
 # Walkthrough of adapter implementation (30 minutes)
 
 Please refer to [Adapter Development Walkthrough](./adapter-development-walkthrough.md)
-

@@ -1,5 +1,5 @@
 This document walks through step-by-step instructions to implement, test and plug a simple adapter into Mixer. For
-complete details on the adapter life cycle, please refer to the [Adapter Developer's Guide](./adapters.md).
+complete details on the adapter life cycle, please refer to the [Adapter Developer's Guide](/Mixer/Adapter-Dev-Guide.md).
 
 **Note**: To complete this walkthrough, it is optional to read the adapter developer's guide. However, to
 create a real production quality adapter, it is highly recommended you read the guide to better understand
@@ -283,7 +283,7 @@ go build ./...
 
 Print Instance and associated Type information in the file configured via adapter config. This requires storing the
 metric type information at configuration-time and using it at request-time. To add this functionality, update the file
-mysampleadapter.go to look like the following. Note the bold text shows the newly added code. 
+mysampleadapter.go to look like the following. Note the bold text shows the newly added code.
 
 <pre>
 //go:generate $GOPATH/src/istio.io/istio/bin/mixer_codegen.sh -f mixer/adapter/mysampleadapter/config/config.proto
@@ -672,5 +672,3 @@ Delete the adapter/mysampleadapter` `directory and undo the edits made inside th
 # Step 10: Next
 
 Next step is to build your own adapter and integrate with  Mixer. Refer to [Developer's guide](./adapters.md) for necessary details.
-
-

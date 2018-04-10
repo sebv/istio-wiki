@@ -3,7 +3,7 @@ The default configuration contain adapters like `stackdriver` that connect to ou
 local testing, you should move `mixer/testdata/config/stackdriver.yaml` out of the config directory, otherwise you will see repeated logging of
 configuration errors.
 
-The local configuration uses a Kubernetes attribute producing adapter. 
+The local configuration uses a Kubernetes attribute producing adapter.
 The `KUBECONFIG` environment variable specifies the location of the Kubernetes configuration.
 
 ```shell
@@ -13,7 +13,7 @@ KUBECONFIG=${HOME}/.kube/config bazel-bin/mixer/cmd/mixs/mixs server --configSto
 You can also run a simple client to interact with the server:
 
 The following command sends a `check` request to Mixer.
-Note that `source.ip` is an ip address specified as 4 `:` separated bytes. 
+Note that `source.ip` is an ip address specified as 4 `:` separated bytes.
 `192.0.0.2` is encoded as `c0:0:0:2` in the example.
 
 ```shell

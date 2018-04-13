@@ -53,6 +53,7 @@
 
 <details>
   <summary>Pilot</summary>
+
 - [Proxy redirection](Proxy-Redirection)
 
 </details>

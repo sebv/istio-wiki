@@ -17,12 +17,12 @@
 </details>
 
 <details open>
-  <summary>Working Groups</summary
+  <summary>Working-Groups</summary
 - [Perf & Scalability](Perf-and-Scalability)
 </details>
 
 <details open>
-  <summary>Hot Topics</summary
+  <summary>Hot-Topics</summary
 - [Policy and Telemetry](Policy-and-Telemetry)
 </details>
 

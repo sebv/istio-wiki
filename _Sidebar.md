@@ -3,7 +3,6 @@
 - [Daily Builds](Daily%20Builds)
 - [Istio Performance oriented setup FAQ](Istio-Performance-oriented-setup-FAQ)
 - [On\-Call Playbook](On-Call%20Playbook)
-- [Performance & Scalability WG decisions](Performance-&-Scalability-WG-decisions)
 - [Vendor FAQ](Vendor-FAQ)
 - [Working with CircleCI](Working-with-CircleCI)
 
@@ -15,6 +14,16 @@
 - [Troubleshooting](Dev-Troubleshooting)
 - [Writing Fast and Lean Code](Dev-Writing-Fast-and-Lean-Code)
 
+</details>
+
+<details open>
+  <summary>Working Groups</summary
+- [Perf & Scalability](Perf-and-Scalability)
+</details>
+
+<details open>
+  <summary>Hot Topics</summary
+- [Policy and Telemetry](Policy-and-Telemetry)
 </details>
 
 <details open>

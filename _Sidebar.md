@@ -1,5 +1,5 @@
 
-- [**Home**](Home)
+- [Welcome](Welcome)
 - [Daily Builds](Daily%20Builds)
 - [Istio Performance oriented setup FAQ](Istio-Performance-oriented-setup-FAQ)
 - [On\-Call Playbook](On-Call%20Playbook)
@@ -16,19 +16,31 @@
 
 </details>
 
-<details open>
+<details>
   <summary>Working Groups</summary>
 
+- [API Management](API-Management)
+- [Config](Config)
+- [Environments](Environments)
+- [Networking](Networking)
 - [Perf & Scalability](Perf-and-Scalability)
+- [Policies and Telemetry](Policies-and-Telemetry)
+- [Test & Release](Test-and-Release)
 </details>
 
-<details open>
+<details>
   <summary>Hot Topics</summary>
 
-- [Policy and Telemetry](Policy-and-Telemetry)
+- [API Management](API-Management)
+- [Config](Config)
+- [Environments](Environments)
+- [Networking](Networking)
+- [Perf & Scalability](Perf-and-Scalability)
+- [Policies and Telemetry](Policies-and-Telemetry)
+- [Test & Release](Test-and-Release)
 </details>
 
-<details open>
+<details>
   <summary>Mixer</summary>
 
 - [Adapter Dev Guide](Mixer-Adapter-Dev-Guide)

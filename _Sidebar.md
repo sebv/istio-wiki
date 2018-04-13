@@ -5,6 +5,7 @@
 - [On\-Call Playbook](On-Call%20Playbook)
 - [Vendor FAQ](Vendor-FAQ)
 - [Working with CircleCI](Working-with-CircleCI)
+- [Developing with minikube](Developing-with-minikube)
 
 <details open>
   <summary>Dev</summary>

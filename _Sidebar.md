@@ -52,6 +52,12 @@
 </details>
 
 <details>
+  <summary>Pilot</summary>
+- [Proxy redirection](Proxy-Redirection)
+
+</details>
+
+<details>
   <summary>Releases</summary>
 
 - [v0.2.1](v0.2.1)

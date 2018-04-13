@@ -1,5 +1,5 @@
 
-- [Welcome](Welcome)
+- [Welcome](Home)
 - [Daily Builds](Daily%20Builds)
 - [Istio Performance oriented setup FAQ](Istio-Performance-oriented-setup-FAQ)
 - [On\-Call Playbook](On-Call%20Playbook)

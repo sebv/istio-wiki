@@ -1,7 +1,7 @@
 
 This document helps you get started developing code for Istio.
-If you follow this guide and find some problem, please [submit an issue](https://github.com/istio/istio/issues/new),
-so we can improve the document.
+If you follow this guide and find some problem, please take
+a few minutes to update this page.
 
 - [Prerequisites](#prerequisites)
   - [Setting up Go](#setting-up-go)

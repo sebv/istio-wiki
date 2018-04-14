@@ -10,7 +10,7 @@ On-call duty starts on Tuesday at noon PST your time zone, ends the following we
 and is performed during regular working hours for your time zone.
 
 ## Prerequisites
-* Follow the [Istio dev guide](https://github.com/istio/istio/blob/master/DEV-GUIDE.md) to set up your environment
+* Follow the [Istio dev guide](https://github.com/istio/istio/wiki/Dev-Guide) to set up your environment
 * Join google group [istio-users](https://groups.google.com/forum/#!forum/istio-users)
 * Join google groups [istio-on-call](https://groups.google.com/forum/#!forum/istio-oncall)
 * Join the `oncall` Slack channel

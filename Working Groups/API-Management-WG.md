@@ -1,4 +1,4 @@
-Design decisions for the API Management working group
+Design decisions for the API Management working group.
 
 * One
 
@@ -10,3 +10,4 @@ Design decisions for the API Management working group
 
 * Five
 
+Learn more about the [API Management working group](https://github.com/istio/community/blob/master/WORKING-GROUPS.md#api-management).

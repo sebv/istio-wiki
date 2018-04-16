@@ -10,3 +10,4 @@ Design decisions for the Networking working group
 
 * Five
 
+Learn more about the [Networking working group](https://github.com/istio/community/blob/master/WORKING-GROUPS.md#networking).

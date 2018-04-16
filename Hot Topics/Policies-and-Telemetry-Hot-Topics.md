@@ -20,4 +20,4 @@ Current hot topics for the Policies and Telemetry working group
 
   The current Mixer API is aimed at enabling proxy-Mixer communication. It is a complex protocol that is not well-suited for services to call directly into Mixer for policy checks or telemetry reporting. The working group is interested in enabling direct calls to Mixer by exposing a set of APIs for existing, community protocols (envoy v2 metrics service, for example) while maintaining existing support for explicit operator control of how information flows through Mixer to infrastructure backends.
 
-
+Learn more about the [Policies & Telemetry working group](https://github.com/istio/community/blob/master/WORKING-GROUPS.md#policies-and-telemetry).

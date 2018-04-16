@@ -118,13 +118,13 @@ Make sure both PR get merged within 1h or each other so master of the 2 repos do
 
 ## Check in Sequence for Vendor (7 steps, 2 PRs dance)
 
-# make your changes as above (`make depend.update`)
-# istio/vendor-istio PR, must be in a branch (not a fork)
-# istio/istio PR with your changes (can be a fork) and referencing sha from previous PR
-# after all tests pass
-# get the first (vendor) PR merged
-# update the second (istio) PR to use the master vendor sha
-# tests should stay green, merge second PR
+1. make your changes as above (`make depend.update`)
+1. istio/vendor-istio PR, must be in a branch (not a fork)
+1. istio/istio PR with your changes (can be a fork) and referencing sha from previous PR
+1. after all tests pass
+1. get the first (vendor) PR merged
+1. update the second (istio) PR to use the master vendor sha
+1. tests should stay green, merge second PR
 
 ## Should I merge changes in `vendor/`?
 

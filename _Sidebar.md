@@ -36,7 +36,7 @@
 - [Config](Config-Hot-Topics)
 - [Environments](Environments-Hot-Topics)
 - [Networking](Networking-Hot-Topics)
-- [Performance & Scalability](Perf-and-Scalability-Hot-Topics)
+- [Perf & Scalability](Perf-and-Scalability-Hot-Topics)
 - [Policies & Telemetry](Policies-and-Telemetry-Hot-Topics)
 - [Test & Release](Test-and-Release-Hot-Topics)
 </details>

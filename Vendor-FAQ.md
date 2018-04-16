@@ -79,8 +79,13 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 
 1. You need to be able to create a branch on https://github.com/istio/vendor-istio (be an org contributor, if you are not, ask someone who is). This is because the PR you make in istio/istio to validate the vendor change will need a valid vendor SHA for the CI to pull it successfully (and thus need to be reachable, alternatively could also change the submodule pointer but that's dangerous/not recommended)
 
-1. Make sure your `dep` is recent enough (understands pruning etc...): 
+1. Make sure your `go` and `dep` are recent enough (understands pruning etc...): 
+   ```shell
+   # make sure your go version is current, as of this writing at least go1.10.1
+   $ go version
+   go version go1.10.1 darwin/amd64
    ```
+   ```shell
    go get -u github.com/golang/dep/cmd/dep
    ls -l `which dep` # should show now's timestamp
    ```

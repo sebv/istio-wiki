@@ -24,7 +24,7 @@
 - [Config](Config)
 - [Environments](Environments)
 - [Networking](Networking)
-- [Perf & Scalability](Perf-and-Scalability)
+- [Performance & Scalability](Performance-and-Scalability-WG)
 - [Policies and Telemetry](Policies-and-Telemetry)
 - [Test & Release](Test-and-Release)
 </details>
@@ -36,7 +36,7 @@
 - [Config](Config)
 - [Environments](Environments)
 - [Networking](Networking)
-- [Perf & Scalability](Perf-and-Scalability)
+- [Performance & Scalability](Perf-and-Scalability-Hot-Topics)
 - [Policies and Telemetry](Policies-and-Telemetry)
 - [Test & Release](Test-and-Release)
 </details>

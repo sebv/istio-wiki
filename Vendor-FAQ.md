@@ -77,6 +77,8 @@ This is thanks to the [pruning](https://github.com/istio/istio/pull/3348/files#d
 
 ## How do I add / change a dependency?
 
+See the next question for an overview
+
 1. You need to be able to create a branch on https://github.com/istio/vendor-istio (be an org contributor, if you are not, ask someone who is). This is because the PR you make in istio/istio to validate the vendor change will need a valid vendor SHA for the CI to pull it successfully (and thus need to be reachable, alternatively could also change the submodule pointer but that's dangerous/not recommended)
 
 1. Make sure your `go` and `dep` are recent enough (understands pruning etc...): 
@@ -113,6 +115,16 @@ Once approved/merged (or on a branch of the vendor repo): submit your PR once th
 You will need to change the istio/istio PR again after the istio/vendor-istio one is merged (as the SHA changes from a branch SHA to master SHA)
 
 Make sure both PR get merged within 1h or each other so master of the 2 repos don't stay out of sync for long and so other vendor changes can proceed. All vendor changes by nature must be serialized.
+
+## Check in Sequence for Vendor (7 steps, 2 PRs dance)
+
+# make your changes as above (`make depend.update`)
+# istio/vendor-istio PR, must be in a branch (not a fork)
+# istio/istio PR with your changes (can be a fork) and referencing sha from previous PR
+# after all tests pass
+# get the first (vendor) PR merged
+# update the second (istio) PR to use the master vendor sha
+# tests should stay green, merge second PR
 
 ## Should I merge changes in `vendor/`?
 

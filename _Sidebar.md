@@ -20,13 +20,13 @@
 <details>
   <summary>Working Groups</summary>
 
-- [API Management](API-Management)
-- [Config](Config)
-- [Environments](Environments)
-- [Networking](Networking)
-- [Performance & Scalability](Performance-and-Scalability-WG)
-- [Policies and Telemetry](Policies-and-Telemetry)
-- [Test & Release](Test-and-Release)
+- [API Management](API-Management-WG)
+- [Config](Config-WG)
+- [Environments](Environments-WG)
+- [Networking](Networking-WG)
+- [Perf & Scalability](Performance-and-Scalability-WG)
+- [Policies and Telemetry](Policies-and-Telemetry-WG)
+- [Test & Release](Test-and-Release-WG)
 </details>
 
 <details>
@@ -36,7 +36,7 @@
 - [Config](Config)
 - [Environments](Environments)
 - [Networking](Networking)
-- [Performance & Scalability](Perf-and-Scalability-Hot-Topics)
+- [Performance & Scalability](Perf-and-Scalability)
 - [Policies and Telemetry](Policies-and-Telemetry)
 - [Test & Release](Test-and-Release)
 </details>

@@ -36,6 +36,13 @@ To debug/install [perf(1)](http://www.brendangregg.com/perf.html) on GKE nodes f
 
 https://cloud.google.com/container-optimized-os/docs/how-to/toolbox#installing_and_running_tools_from_toolbox
 
+## Go program profiling
+
+Memory:
+```
+go tool pprof -http localhost:8085 http://localhost:8080/debug/pprof/heap
+```
+
 ## See also
 
 See also the [Performance Testing guide](https://github.com/istio/istio/tree/master/tools#istio-load-testing-user-guide) and the scripts in https://github.com/istio/istio/tree/master/tools

@@ -24,21 +24,21 @@
 - [Config](Config-WG)
 - [Environments](Environments-WG)
 - [Networking](Networking-WG)
-- [Perf & Scalability](Performance-and-Scalability-WG)
-- [Policies and Telemetry](Policies-and-Telemetry-WG)
+- [Perf & Scalability](Perf-and-Scalability-WG)
+- [Policies & Telemetry](Policies-and-Telemetry-WG)
 - [Test & Release](Test-and-Release-WG)
 </details>
 
 <details>
   <summary>Hot Topics</summary>
 
-- [API Management](API-Management)
-- [Config](Config)
-- [Environments](Environments)
-- [Networking](Networking)
-- [Performance & Scalability](Perf-and-Scalability)
-- [Policies and Telemetry](Policies-and-Telemetry)
-- [Test & Release](Test-and-Release)
+- [API Management](API-Management-Hot-Topics)
+- [Config](Config-Hot-Topics)
+- [Environments](Environments-Hot-Topics)
+- [Networking](Networking-Hot-Topics)
+- [Performance & Scalability](Perf-and-Scalability-Hot-Topics)
+- [Policies & Telemetry](Policies-and-Telemetry-Hot-Topics)
+- [Test & Release](Test-and-Release-Hot-Topics)
 </details>
 
 <details>

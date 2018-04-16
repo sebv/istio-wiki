@@ -10,7 +10,7 @@ Current hot topics for the Policies and Telemetry working group
 
 * Client-side Mixer integration
 
-  To date, Istio's Mixer integration has been server-side (service receiving traffic makes calls out to Mixer for `Check()` and `Report()`). This has meant that Istio cannot "see" client-side errors (including in cases like fault-injection) and cannot handle policy enforcement on the client-side (in situations such as Ingress when this might be appropriate). This work is to enable client-side Mixer integration for Istio.
+  This work is to enable client-side Mixer integration for Istio. To date, Istio's Mixer integration has been server-side (service receiving traffic makes calls out to Mixer for `Check()` and `Report()`). This has meant that Istio cannot "see" client-side errors (including in cases like fault-injection) and cannot handle policy enforcement on the client-side (in situations such as Ingress when this might be appropriate).
 
 * Four
 

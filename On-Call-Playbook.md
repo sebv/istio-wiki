@@ -14,6 +14,7 @@ and is performed during regular working hours for your time zone.
 * Join google group [istio-users](https://groups.google.com/forum/#!forum/istio-users)
 * Join google groups [istio-on-call](https://groups.google.com/forum/#!forum/istio-oncall)
 * Join the `oncall` Slack channel
+* Join the github on-call team at https://github.com/orgs/istio/teams/oncall.
 
 ## Responsibilities
 * At the begining of your on-call make sure https://goo.gl/9wjRdg is updated with current snapshot numbers (of issues, PRs, etc...)

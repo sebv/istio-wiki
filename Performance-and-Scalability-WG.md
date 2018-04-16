@@ -14,4 +14,4 @@ See also https://github.com/istio/istio/wiki/Istio-Performance-oriented-setup-FA
 
 And our current [Hot Topics](https://github.com/istio/istio/wiki/Perf-and-Scalability-Hot-Topics)
 
-Learn more about the [Perf & Scalability working group](https://github.com/istio/community/blob/master/WORKING-GROUPS.md#performance-and-scalability).
+Learn more about the [Performance & Scalability working group](https://github.com/istio/community/blob/master/WORKING-GROUPS.md#performance-and-scalability).

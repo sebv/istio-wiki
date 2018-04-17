@@ -1,4 +1,11 @@
-Istio uses vendored dependencies through a submodule. This avoids having large unrelated commits mixed with our actual work while having the benefits of hermetic reproducible builds, tracked changes and fast dependencies download.
+We tried vendor as a submodule and while it has a lot of benefits it also proved too much complexity ([#4746](https://github.com/istio/istio/issues/4746)) so we switched to fully checked-in vendor.
+
+Please ask/see @nmittler @rshriram @geeknoid for any question or issue with vendor
+
+---
+Historical FAQ:
+---
+~Istio uses vendored dependencies through a submodule. This avoids having large unrelated commits mixed with our actual work while having the benefits of hermetic reproducible builds, tracked changes and fast dependencies download.~
 
 ## How do I get setup?
 One time / first time setup

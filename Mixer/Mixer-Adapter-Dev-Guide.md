@@ -886,4 +886,4 @@ examples for reference when implementing new adapters.
 
 # Walkthrough of adapter implementation (30 minutes)
 
-Please refer to [Adapter Development Walkthrough](./Mixer-Adapter-Walkthrough.md)
+Please refer to [Adapter Development Walkthrough](./Mixer-Adapter-Walkthrough)

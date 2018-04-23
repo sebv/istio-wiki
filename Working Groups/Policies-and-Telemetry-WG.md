@@ -1,6 +1,7 @@
 ## Weekly Meeting
 * Zoom Meeting Link: [https://istio.zoom.us/j/576917606](https://istio.zoom.us/j/576917606)
 * Agenda and Notes: [https://bit.ly/2JgmDes](https://bit.ly/2JgmDes)
+* YouTube playlist: [https://www.youtube.com/watch?v=z-z6MqIalN4&list=PL7wB27eZmdffF-9nyaw01Ni_0GOWBzaF4](https://www.youtube.com/watch?v=z-z6MqIalN4&list=PL7wB27eZmdffF-9nyaw01Ni_0GOWBzaF4) 
 
 ## On-going discussions:
 1. RE: Client-side telemetry

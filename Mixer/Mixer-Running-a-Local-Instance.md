@@ -7,7 +7,7 @@ The local configuration uses a Kubernetes attribute producing adapter.
 The `KUBECONFIG` environment variable specifies the location of the Kubernetes configuration.
 
 ```shell
-KUBECONFIG=${HOME}/.kube/config bazel-bin/mixer/cmd/mixs/mixs server --configStoreURL=fs://$(pwd)/mixer/testdata/config
+$(GOPATH)/src/istio.io/istio/mixer/cmd/mixs/mixs server --configStoreURL=fs://$(GOPATH)/src/istio.io/istio/mixer/testdata/config
 ```
 
 You can also run a simple client to interact with the server:

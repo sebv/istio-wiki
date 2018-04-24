@@ -842,10 +842,8 @@ start, when operator configuration is loaded/changed and when request is receive
 
 # Plug adapter into Mixer
 
-For a new adapter to plug into Mixer, you will have to add your adapter's reference into Mixer's inventory
-[build file](https://github.com/istio/istio/blob/master/mixer/adapter/BUILD)'s inventory_library rule. In the *deps* section
-add a reference to adapter's go_library build rule, and in the *packages* section add the short name and the go import
-path to the adapter package that implements the `GetInfo `function. These two changes will plug your custom adapter into Mixer.
+For a new adapter to plug into Mixer, you will have to add your adapter's reference into vendor's directory
+under istio branch.
 
 # Testing
 

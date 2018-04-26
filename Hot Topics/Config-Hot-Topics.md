@@ -1,14 +1,12 @@
 Current hot topics for the Config working group
 
-* One
+* Bring basic server side config validation to beta.
 
-* Two
+* Implement Galley Alpha to fully support v1. 
 
-* Three
+* Design/prototyping service config with networking and authentication features.
 
-* Four
+* Design/prototyping component config distribution, Galley client. 
 
-* Five
-
-Learn more about the [Config working group](https://github.com/istio/community/blob/master/WORKING-GROUPS.md#config).
+Learn more about the [Config working group roadmap](https://docs.google.com/document/d/11xm_dUYVYBbn1b3mQ9XneWRYj05h-hd_29DM8myvoRE/edit).
 

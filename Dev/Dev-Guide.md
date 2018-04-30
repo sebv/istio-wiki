@@ -1,4 +1,3 @@
-
 This document helps you get started developing code for Istio.
 If you follow this guide and find some problem, please take
 a few minutes to update this page.
@@ -69,7 +68,7 @@ To leverage that you will need:
 
 ### Other Dependencies
 
-Istio vendors dependencies in a sub-module. The submodule is handled automatically by the Makefile. But see https://github.com/istio/istio/wiki/Vendor-FAQ for any vendor/dependencies question.
+The Istio GitHub repository contains an up-to-date `vendor` directory, which contains all of the dependencies for Istio. See the [Vendor FAQ](https://github.com/istio/istio/wiki/Vendor-FAQ) for questions related to dependencies.
 
 ### Setting up Kubernetes
 
@@ -379,9 +378,7 @@ make racetest
 
 ### Adding dependencies
 
-First, don't add more dependencies, unless you have a very good reason :-) 
-
-Please see https://github.com/istio/istio/wiki/Vendor-FAQ#how-do-i-add--change-a-dependency
+Please see [the Vendor FAQ](https://github.com/istio/istio/wiki/Vendor-FAQ#how-do-i-add--change-a-dependency)
 
 ### About testing
 

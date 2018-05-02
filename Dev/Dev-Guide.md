@@ -280,11 +280,10 @@ make push.docker.citadel
 
 ### Building the Istio manifests
 
-Use [updateVersion.sh](https://github.com/istio/istio/blob/master/install/updateVersion.sh)
-to generate new manifests with mixer, pilot, and ca_cert custom built containers:
+Use the following command to build the yaml files:
 
 ```shell
-install/updateVersion.sh -a ${HUB},${TAG}
+make generate_yaml
 ```
 
 ### Cleaning outputs

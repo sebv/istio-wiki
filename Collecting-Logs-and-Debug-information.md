@@ -1,0 +1,23 @@
+Istio has many moving parts. 
+When a problem is reported by a customer, it is useful to know the full state of system.
+
+ * State of all pods running in the system.  (`kubectl get pods -o yaml --all-namespaces`)
+ * services
+ * Deployments
+ * Endpoints
+
+`kubectl get pods,services,deployments,endpoints --all-namespaces -o yaml > k8s_resources.yaml`
+
+ * Names of secrets in `istio-system`:  `kubectl --namespace istio-system get secrets`
+ * Config maps in `istio-system`: `kubectl --namespace istio-system get cm -o yaml`
+ * Logs from all istio-components and istio-sidecars. This should include both current and previous logs.
+   * `foreach kubectl logs POD_name -c istio-proxy` 
+   * `kubectl logs istio-telemetry-ppp -c mixer`
+   * `kubectl logs istio-policy-ppp -c mixer`
+   * `kubectl logs istio-pilot -c discovery`
+
+* All Istio configuration artifacts.
+  * `kubectl get $(kubectl get crd  --no-headers | awk '{printf "%s,",$1}END{printf "attributemanifests.config.istio.io\n"}') --all-namespaces`
+
+ ## TODO Turning on debug on Istio components
+

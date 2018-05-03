@@ -14,6 +14,7 @@
 - [Guide](Dev-Guide)
 - [Troubleshooting](Dev-Troubleshooting)
 - [Writing Fast and Lean Code](Dev-Writing-Fast-and-Lean-Code)
+- [Collecting logs](Dev-Collecting-Logs)
 
 </details>
 

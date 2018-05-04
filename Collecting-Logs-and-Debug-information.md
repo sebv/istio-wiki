@@ -11,10 +11,14 @@ When a problem is reported by a customer, it is useful to know the full state of
  * Names of secrets in `istio-system`:  `kubectl --namespace istio-system get secrets`
  * Config maps in `istio-system`: `kubectl --namespace istio-system get cm -o yaml`
  * Logs from all istio-components and istio-sidecars. This should include both current and previous logs.
-   * `foreach kubectl logs POD_name -c istio-proxy` 
-   * `kubectl logs istio-telemetry-ppp -c mixer`
-   * `kubectl logs istio-policy-ppp -c mixer`
-   * `kubectl logs istio-pilot -c discovery`
+   * `foreach kubectl logs POD_name -c istio-proxy`
+ * Mixer Logs:
+   * `kubectl logs -n istio-system -listio=mixer -c mixer`
+   * `kubectl logs -n istio-system -listio=policy -c mixer`
+   * `kubectl logs -n istio-system -listio=telemetry -c mixer`
+ * Pilot Logs:
+   * `kubectl logs -n istio-system -listio=pilot -c discovery`
+   * `kubectl logs -n istio-system -listio=pilot -c istio-proxy`
 
 * All Istio configuration artifacts.
   * `kubectl get $(kubectl get crd  --no-headers | awk '{printf "%s,",$1}END{printf "attributemanifests.config.istio.io\n"}') --all-namespaces`

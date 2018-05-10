@@ -1,6 +1,24 @@
 Istio has many moving parts. 
 When a problem is reported by a customer, it is useful to know the full state of system.
 
+## Option A: Run `bin/dump_kubernetes.sh`
+
+```sh
+curl https://raw.githubusercontent.com/istio/istio/master/bin/dump_kubernetes.sh | sh -s -- -z
+```
+
+Or run the script locally from the root of this repository:
+
+```sh
+bin/dump_kubernetes.sh -z
+```
+
+Then send the outputted "istio-dump.tar.gz" along with your reported problem.
+
+## Option B: Manual collection
+
+If you are unable to follow option A and run the script, manually gather the following info:
+
  * State of all pods running in the system.  (`kubectl get pods -o yaml --all-namespaces`)
  * services
  * Deployments

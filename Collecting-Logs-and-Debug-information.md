@@ -4,7 +4,7 @@ When a problem is reported by a customer, it is useful to know the full state of
 ## Option A: Run `bin/dump_kubernetes.sh`
 
 ```sh
-curl https://raw.githubusercontent.com/Tahler/istio/ba69dff344d5a4a68c91b06b7bb5f268bf6b05e7/bin/dump_kubernetes.sh | sh -s -- -z
+curl https://raw.githubusercontent.com/istio/istio/release-0.8/bin/dump_kubernetes.sh | sh -s -- -z
 ```
 
 Or run the script locally from the root of this repository:
@@ -13,7 +13,7 @@ Or run the script locally from the root of this repository:
 bin/dump_kubernetes.sh -z
 ```
 
-Then send the outputted "istio-dump.tar.gz" along with your reported problem.
+Then send the produced "istio-dump.tar.gz" along with your reported problem.
 
 ## Option B: Manual collection
 

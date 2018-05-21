@@ -834,11 +834,11 @@ First let's look into how Mixer, adapters, templates and operator configurations
 Now that we have understood the relationship between various artifacts, let's look into what happens at the time of Mixer
 start, when operator configuration is loaded/changed and when request is received.
 
-![flow: mixer start](./images/mixer%20start%20flow.svg)
+![flow: mixer start](/images/mixer%20start%20flow.svg)
 
-![flow: operator config change](./images/operator%20config%20change.svg)
+![flow: operator config change](/images/operator%20config%20change.svg)
 
-![flow: incoming api](./images/request%20time.svg)
+![flow: incoming api](/images/request%20time.svg)
 
 # Plug adapter into Mixer
 
